@@ -24,7 +24,7 @@ export class GoogleTrends {
 					}
 				}
 			);
-		} catch (err) {
+		} catch (err: any) {
 			throw new Error(err);
 		}
 	}

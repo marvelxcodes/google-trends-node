@@ -1,44 +1,47 @@
 {
-  "name": "google-trends-node",
-  "version": "1.0.0",
-  "description": "Third Party Typescript API for Google Trends",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "type": "module",
-  "scripts": {
-    "test": "",
-    "build": "",
-    "format": "prettier --fix",
-    "lint": "eslint --fix"
-  },
-  "keywords": [
-    "google trends",
-    "google trends api",
-    "marvelxcodes",
-    "node google trends",
-    "trends",
-    "trending topics",
-    "google",
-    "API",
-    "keyword",
-    "search"
-  ],
-  "author": "marvelxcodes",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^1.5.0"
-  },
-  "bugs": {
-    "url": "https://github.com/marvelxcodes/google-trends-node/issues"
-  },
-  "files": [
-    "src/*"
-  ],
-  "homepage": "https://github.com/pat310/google-trends-api#README.md",
-  "devDependencies": {
-    "@types/node": "20.4.2",
-    "eslint": "^8.49.0",
-    "prettier": "^3.0.3",
-    "typescript": "5.1.6"
-  }
+	"name": "google-trends-node",
+	"version": "0.0.1",
+	"description": "Third Party Typescript API for Google Trends",
+	"main": "src/index.ts",
+	"types": "./dist/index.d.ts",
+	"module": "./dist/index.js",
+	"type": "module",
+	"scripts": {
+		"test": "",
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"format": "prettier --fix",
+		"lint": "eslint --fix"
+	},
+	"keywords": [
+		"google trends",
+		"google trends api",
+		"marvelxcodes",
+		"node google trends",
+		"trends",
+		"trending topics",
+		"google",
+		"API",
+		"keyword",
+		"search"
+	],
+	"author": "marvelxcodes",
+	"license": "MIT",
+	"dependencies": {
+		"axios": "^1.5.0"
+	},
+	"bugs": {
+		"url": "https://github.com/marvelxcodes/google-trends-node/issues"
+	},
+	"files": [
+		"src/*"
+	],
+	"homepage": "https://github.com/pat310/google-trends-api#README.md",
+	"devDependencies": {
+		"@changesets/cli": "^2.26.2",
+		"@types/node": "20.4.2",
+		"eslint": "^8.49.0",
+		"prettier": "^3.0.3",
+		"tsup": "^7.2.0",
+		"typescript": "5.1.6"
+	}
 }
