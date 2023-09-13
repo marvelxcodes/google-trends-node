@@ -8,8 +8,8 @@
   "scripts": {
     "test": "",
     "build": "",
-    "format": "",
-    "lint": ""
+    "format": "prettier --fix",
+    "lint": "eslint --fix"
   },
   "keywords": [
     "google trends",
@@ -37,6 +37,8 @@
   "homepage": "https://github.com/pat310/google-trends-api#README.md",
   "devDependencies": {
     "@types/node": "20.4.2",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
     "typescript": "5.1.6"
   }
 }
